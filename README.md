@@ -5,7 +5,13 @@
 BikeShare Project
 
 ### Description
-The BikeShare Project analyses the data collected from 3 cities to provide insights like most used stop, popular times of travel, demographics of travelers etc.  
+The BikeShare Project analyses the data collected from 3 cities to provide insights like most used stop, popular times of travel, demographics of travelers
+
+### Types of Analysis
+time_stats
+station_stats
+user_stats
+trip_duration_stats
 
 ### Files used
 BikeShare.py
