@@ -8,7 +8,8 @@ BikeShare Project
 Describe what your project is about and what it does
 
 ### Files used
-Include the files used
+BikeShare.py
+.gitignore : Chicago.csv Washington.csv New_york_city.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Forked from :https://github.com/udacity/pdsnd_github 
