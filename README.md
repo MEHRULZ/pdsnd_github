@@ -5,23 +5,24 @@
 BikeShare Project
 
 ### Description
-The BikeShare Project analyses the data collected from 3 cities to provide insights like most used stop, popular times of travel, demographics of travelers
+The BikeShare Project analyses the data collected from 3 cities to provide insights like most used stop, popular times of travel, demographics of travelers.
 
 ### Types of Analysis
-time_stats
-station_stats
-user_stats
-trip_duration_stats
+    time_stats
+    station_stats
+    user_stats
+    trip_duration_stats
 
 ###Filter types
 Data can be filtered by
-CITY
-MONTH
-DAY OF THE WEEK
+    CITY
+    MONTH
+    DAY OF THE WEEK
 
 ### Files used
 BikeShare.py
-.gitignore : Chicago.csv Washington.csv New_york_city.csv
+.gitignore
+    Chicago.csv Washington.csv New_york_city.csv
 
 ### Credits
 Forked from :https://github.com/udacity/pdsnd_github
