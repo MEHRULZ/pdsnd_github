@@ -18,7 +18,7 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
 
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    city = input(" Please Choose a city to explore Bikeshare Data: Chicago, New York City, Washington ")
+    city = input(" Please Choose a city to explore Bikeshare Data: Chicago, New York City or Washington ")
     while city.lower() not in ['chicago','new york city','washington']:
             city = input(" Wish we could help you with {} ,we just have data for Chicago, New York City, Washington, so choose from these ".format(city))
     city = city.lower()
@@ -26,7 +26,7 @@ def get_filters():
     # get user input for month (all, january, february, ... , june)
     month = input('\nFilter by Month: All, January, February, March, April, May, June: Please type the full month name.\n')
     while month.strip().lower() not in ['all','january', 'february', 'march', 'april', 'may', 'june']:
-        month = input('\n Please choose from these months . All, January, February, March, April, May, June: \n')
+        month = input('\n Please choose from these months: January, February, March, April, May, June or type All for all months \n')
         month = month.strip().lower()
     month = month.lower()
 
@@ -198,7 +198,7 @@ def display_raw_data(df):
             index = index + 5
             if index > total_rows:
                 index = total_rows
-            view_data =input('Would you like to see 5 more data records ? Please write Yes or No \n')
+            view_data =input('Would you like to see 5 more data records? Please write Yes or No \n')
             view_data = view_data.title()
 
         elif view_data == 'No':
@@ -212,6 +212,7 @@ def main():
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
+
         # Call The functions to view Time, Station and Trip Duration Stats
         time_stats(df)
         station_stats(df)
