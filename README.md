@@ -13,6 +13,12 @@ station_stats
 user_stats
 trip_duration_stats
 
+###Filter types
+Data can be filtered by
+CITY
+MONTH
+DAY OF THE WEEK
+
 ### Files used
 BikeShare.py
 .gitignore : Chicago.csv Washington.csv New_york_city.csv
