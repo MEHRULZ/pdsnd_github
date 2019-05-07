@@ -176,6 +176,9 @@ def user_stats(df):
         earliest_year =df['Birth Year'].min()
         recent_year =df ['Birth Year'].max()
         common_year =df['Birth Year'].mode()[0]
+    print('The Eldest user was born in : ',earliest_year)
+    print('The Youngest user was born in  ',recent_year)
+    print('The Average Age is  ',2019 -common_year)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
